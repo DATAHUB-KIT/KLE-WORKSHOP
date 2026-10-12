@@ -35,3 +35,9 @@ like NAFTA that put special interests over workers' interests."[33][34]
 """
   ###########################################################
   
+prompt=f"""
+
+summarize the folowing article in 100 words
+{article}
+"""
+#############################################
