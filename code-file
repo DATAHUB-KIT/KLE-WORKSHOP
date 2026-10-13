@@ -1,49 +1,10 @@
-!pip install genai
-
-############################################3
-  from google import genai
-from google.colab import userdata
-GEMINI_API_KEY=userdata.get('your key')
-  #######################################
-  client=genai.Client(api_key=GEMINI_API_KEY)
-  ###################################3
-  article="""
-
-During the 1990s and 2000s, globalization and international trade 
-expanded as improvements in communications and shipping technology made 
-offshoring more feasible and trade deals reduced tariffs and other barriers to commerce.
-[27][28] Although the aggregate gains to the United States were substantial, the benefits were 
-unevenly distributed; high-skilled workers generally prospered, while Americans with fewer 
-skills and less geographic mobility struggled to adapt to rapid economic change.[29][30]
-
-Although U.S. manufacturing employment had been declining for decades, job losses accelerated in 
-the 2000s after the United States normalized trade relations with China.[31] The surge in outsourcing,
- alongside advancements in automation, led to localized depressions in many manufacturing-dependent 
- communities.[30][31] Laid off manufacturing workers typically did not relocate or transition 
- into new industries, even after their communities rebounded, and instead remained unemployed 
- long term.[30] Research indicates that these regions became more politically polarized and
-  that their legislators increasingly supported protectionist policies.[32]
-
-During the 2000s, public opinion surveys and political rhetoric began to reflect 
-growing skepticism toward international economic integration, a trend that 
-intensified following the 2008 financial crisis.[32] In 2008, Barack Obama 
-blamed NAFTA for the loss of a million jobs and stated, "we can't keep passing unfair trade deals 
-like NAFTA that put special interests over workers' interests."[33][34]
-
-
-
-"""
-  ###########################################################
-  
-prompt=f"""
-
-summarize the folowing article in 100 words
-{article}
-"""
-#############################################
-article_response=client.models.generate_content(
-    model="gemini-3.1-flash-lite",
-    contents=prompt
-)
-################################################
-print(article_response.text)
+pipe=DiffusionPipeline.from_pretrained ("stabilityai/stable-diffusion-xl-base-1.0",  torch_dtype=torch.float16,  use_safetensors=True,  variant="fp16")
+pipe.to("cuda")
+###############################################3
+prompt="    "
+#################################3
+images=pipe(prompt=prompt,
+            num_inference_steps=100,
+            guidance_scale=9).images[0]
+images
+###############################3
