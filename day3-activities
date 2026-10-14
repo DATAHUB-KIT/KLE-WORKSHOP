@@ -15,3 +15,62 @@ Facts: Date 22 November; 9:00 AM; Seminar Hall B; teams of 3–4; registration c
 Constraints: Use a welcoming tone. Do not invent prizes, sponsors, fees, or eligibility rules. Preserve all dates and numbers.
 Format: Headline, 80–120 word announcement, event details as bullets, and registration reminder.
 #################################################################
+# Prompt: Create My Professional Resume
+
+Act as a professional resume writer. Create a professional, ATS-friendly resume for job interviews using the following details provided by me.
+
+**Personal Details**
+- Full Name:
+- Email Address:
+- Phone Number:
+- LinkedIn Profile:
+- GitHub Profile:
+- City:
+
+**Career Details**
+- Target Job Role:
+- Career Objective:
+- Technical Skills:
+- Soft Skills:
+
+**Education**
+- Degree/Course:
+- College Name:
+- University Name:
+- Graduation Year:
+- Percentage/CGPA:
+
+**Projects**
+- Project Title:
+- Project Description:
+- Technologies Used:
+- My Contribution:
+
+**Internships/Experience**
+- Company Name:
+- Job Role:
+- Duration:
+- Responsibilities:
+
+**Certifications**
+- Certification Name:
+- Issuing Organization:
+
+**Achievements**
+- Academic Achievements:
+- Other Achievements:
+
+**Additional Information**
+- Workshops Attended:
+- Languages Known:
+- Hobbies/Interests:
+
+**Instructions:**
+
+1. Create a clean, professional, ATS-friendly resume.
+2. Highlight relevant skills, education, projects, and achievements.
+3. Use professional language and strong action verbs.
+4. Keep the resume to one page if possible for a fresher.
+5. Do not invent information; omit sections that are not applicable.
+6. Correct grammar and spelling.
+7. Format the final resume so I can copy it into Microsoft Word and save it as a PDF.
