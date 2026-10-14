@@ -8,3 +8,10 @@ Step 2. Choose a clear task verb: explain, compare, summarise, classify, or gene
 Step 3. Add scope, length, examples 
 Step 4. Run both prompts and compare relevance and usability
   ==========================================================================
+Role: You are a college communications assistant.
+Task: Write an engaging announcement for an AI hackathon.
+Audience: Engineering students.
+Facts: Date 22 November; 9:00 AM; Seminar Hall B; teams of 3–4; registration closes 18 November.
+Constraints: Use a welcoming tone. Do not invent prizes, sponsors, fees, or eligibility rules. Preserve all dates and numbers.
+Format: Headline, 80–120 word announcement, event details as bullets, and registration reminder.
+#################################################################
