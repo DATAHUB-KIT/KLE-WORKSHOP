@@ -74,3 +74,19 @@ Act as a professional resume writer. Create a professional, ATS-friendly resume 
 5. Do not invent information; omit sections that are not applicable.
 6. Correct grammar and spelling.
 7. Format the final resume so I can copy it into Microsoft Word and save it as a PDF.
+###############################################################################
+zero shot
++++++++++++++++++++++++++++++++++++++++++++++++++
+Classify the message into exactly one label: Fees, Technical, Account, Academics, Other
+
+Message: ‘I cannot log in to the student portal.’” 
+
+
+“I paid twice for tuition.” : Fees 
+“The portal crashes when I upload a file.” : Technical 
+“I forgot my password.” : Account 
+“My exam grade is missing.” : Academics 
+
+
+########################################################################
+
