@@ -136,3 +136,18 @@ response = client.models.generate_content(
 print("\nGemini Response:\n")
 print(response.text)
 ############################################################
+def create_prompt(topic, audience, output_format):
+    return f"""
+    Act as an experienced technical educator.
+
+    Topic: {topic}
+    Target audience: {audience}
+    Output format: {output_format}
+
+    Instructions:
+    1. Explain the concept accurately.
+    2. Include one practical example.
+    3. Use language appropriate for the audience.
+    4. End with one practice question.
+    """
+==========================================
