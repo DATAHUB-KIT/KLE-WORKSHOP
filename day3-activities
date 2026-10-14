@@ -151,3 +151,24 @@ def create_prompt(topic, audience, output_format):
     4. End with one practice question.
     """
 ==========================================
+def generate_lesson(topic, audience, output_format):
+    prompt = create_prompt(topic, audience, output_format)
+
+    response = client.models.generate_content(
+        model="gemini-3.1-flash-lite",
+        contents=prompt
+    )
+
+    print("\nGENERATED LESSON\n")
+    print(response.text)
+
+
+if __name__ == "__main__":
+    generate_lesson(
+        topic="Python exception handling",
+        audience="First-year engineering students",
+        output_format="Headings and bullet points"
+    )
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
