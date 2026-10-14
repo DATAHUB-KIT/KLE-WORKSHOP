@@ -89,4 +89,15 @@ Message: ‘I cannot log in to the student portal.’”
 
 
 ########################################################################
+few shot sentiment analysis
 
+prompt: “Classify as Positive, Neutral, Negative or Mixed. Mixed means the text contains meaningful positive and negative opinions. 
+
+Example: ‘Fast delivery and great packaging.’ : Positive. 
+‘It arrived two days late.’ : Negative. 
+‘The item is blue.’ : Neutral. 
+‘Great quality, but the battery fails.’ :Mixed. 
+
+Classify: ‘The app looks excellent, but it crashes
+every morning.’” 
+#########################################################################
