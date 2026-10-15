@@ -61,3 +61,11 @@ if st.button("Generate Response"):
 ==========================================================
 https://www.rmofspringfield.ca/p/meeting-audio-files
 ======================================================================
+from google.colab import files
+
+uploaded = files.upload()
+
+audio_file = list(uploaded.keys())[0]
+
+print(audio_file)
+##############################################
