@@ -6,3 +6,10 @@ class Feedback(BaseModel):
     sentiment: Literal["Positive", "Negative", "Neutral"]
     rating: int = Field(ge=1, le=5)
 ######################################################3
+response=client.models.generate_content(
+    model="gemini-3.6-flash",
+    contents=prompt,
+   # config={"response_mime_type": "application/json",
+     #   "response_schema": Feedback}
+)
+######################################################
