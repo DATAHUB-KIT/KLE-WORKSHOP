@@ -34,3 +34,27 @@ if st.button("Submit"):
     st.write("Qualification:", qualification)
 ==============================================================
 
+import streamlit as st
+st.title("LLM Prompt and Response App")
+
+
+# Get user prompt
+prompt = st.text_area("Enter your prompt:")
+
+# Generate response
+if st.button("Generate Response"):
+
+    if prompt.strip():
+
+        with st.spinner("LLM is generating response..."):
+
+            response = client.models.generate_content(
+                model="gemini-3.1-flash-lite",
+                contents=prompt
+            )
+
+        st.subheader("LLM Response")
+        st.write(response.text)
+
+    else:
+        st.warning("Please enter a prompt.")
