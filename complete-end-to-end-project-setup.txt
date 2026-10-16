@@ -182,7 +182,7 @@ git config --global user.email "your-email@example.com"
 git   init
 git status
 git remote set-url origin https://github.com/DATAHUB-KIT/demo1.git
-git add sumamrizeapp.py-
+git add sumamrizeapp.py
 git add requirements.txt
 git diff --cached --name-only
 git commit -m "Add selected Streamlit app files"
