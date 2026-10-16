@@ -51,3 +51,17 @@ __pycache__/
 .streamlit/secrets.toml
 .env
 ========================================
+create in your project folder .gitignore
+=========================================
+.venv/
+venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.env
+===============================================
+create in your project folder requirements.txt
+===============================================
+
+streamlit
+google-genai
