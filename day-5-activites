@@ -43,3 +43,11 @@ if st.button("Generate Response"):
 
     else:
         st.warning("Please enter a prompt.")
+==================================================
+.venv/
+venv/
+__pycache__/
+*.pyc
+.streamlit/secrets.toml
+.env
+========================================
