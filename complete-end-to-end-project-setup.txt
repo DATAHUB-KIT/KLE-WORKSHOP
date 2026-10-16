@@ -177,6 +177,8 @@ DOCUMENT:
 ================================================
 push your project files to github 
 ===================================================
+git config --global user.name "Your Name"
+git config --global user.email "your-email@example.com"
 git   init
 git status
 git remote set-url origin https://github.com/DATAHUB-KIT/demo1.git
