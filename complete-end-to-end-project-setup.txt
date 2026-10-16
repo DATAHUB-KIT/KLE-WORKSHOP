@@ -174,3 +174,16 @@ DOCUMENT:
     except Exception as e:
         st.error("Could not read the uploaded document.")
         st.code(str(e))
+================================================
+push your project files to github 
+===================================================
+git   init
+git status
+git remote set-url origin https://github.com/DATAHUB-KIT/demo1.git
+git add sumamrizeapp.py-
+git add requirements.txt
+git diff --cached --name-only
+git commit -m "Add selected Streamlit app files"
+git branch -M main
+git remote add origin https://github.com/DATAHUB-KIT/demo1.git
+git push -u origin main
