@@ -286,7 +286,17 @@ while True:
     memory.append(f"Assistant: {answer}")
 
 
+==============================================
+def add_numbers(a: float, b: float) -> float:
+        return a + b
+=================================================
+def celsius_to_fahrenheit(celsius: float) -> float:
+        return (celsius * 9/5) + 32
+=====================================================
+def dollars_to_rupees(dollars: float) -> float:
 
+    exchange_rate = 85
+    return dollars * exchange_rate
 
 
 
