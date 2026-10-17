@@ -225,12 +225,17 @@ if st.sidebar.button("Clear Chat"):
 
 
 
+########################################################################
 
 
-
-
-
-
+git init
+git add bot.py
+git add requirements.txt
+git commit -m "commit"
+git branch -M main
+git remote add origin https://github.com/DATAHUB-KIT/test-repo.git 
+git push origin main 
+######################################################
 
 
 
